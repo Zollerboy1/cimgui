@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/sh
 
 # this script must be executed in this directory
 # all the output goes to generator/output folder
@@ -16,4 +16,4 @@
 # arg[2] options as words in one string: internal for imgui_internal generation, freetype for freetype generation
 # examples: "" "internal" "internal freetype"
 # arg[3..n] name of implementations to generate
-luajit ./generator.lua gcc "internal" glfw opengl3 opengl2 sdl
+luajit ./generator.lua clang "internal" glfw opengl3 opengl2 sdl
